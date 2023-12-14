@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Список параметров</title>
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+    <h1>Список параметров</h1>
+    <form method="POST" action="/web/car/tax-param/get/all">
+        {{ form.hidden_tag() }}
+        {{ form.submit(class="btn btn-primary") }}
+    </form>
+    <ul>
+        {% for param in car_tax_params %}
+            <li>
+                <strong>ID:</strong> {{ param.id }}<br>
+                <strong>Код региона:</strong> {{ param.city_id }}<br>
+                <strong>Мощность (мин):</strong> {{ param.min_horsepower }}<br>
+                <strong>Мощность (макс):</strong> {{ param.max_horsepower }}<br>
+                <strong>Начало производства:</strong> {{ param.start_year }}<br>
+                <strong>Конец производства:</strong> {{ param.end_year }}<br>
+                <strong>Налоговая ставка:</strong> {{ param.tax_rate }}<br>
+            </li>
+        {% endfor %}
+    </ul>
+</body>
+</html>

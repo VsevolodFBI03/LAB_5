@@ -1,0 +1,9 @@
+
+ppython:S1192D"XDefine a constant instead of duplicating this literal 'Car tax param not found' 3 times.(«Ãò€
+opython:S1192²"VDefine a constant instead of duplicating this literal 'tax-param-update.html' 3 times.(İì¥ˆ
+Cpython:S5806"+Rename this variable; it shadows a builtin.(ÀÙÃ¾
+Cpython:S58067"+Rename this variable; it shadows a builtin.(ÀÙÃ¾
+Cpython:S5806W"+Rename this variable; it shadows a builtin.(¦ìÍ
+Hpython:S5806~"+Rename this variable; it shadows a builtin.(—œø¡úÿÿÿÿ
+Ipython:S5806¨"+Rename this variable; it shadows a builtin.(—œø¡úÿÿÿÿ
+Ipython:S5806È"+Rename this variable; it shadows a builtin.(—œø¡úÿÿÿÿ

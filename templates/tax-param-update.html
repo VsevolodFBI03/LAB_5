@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Обновить налоговые параметры</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+<div class="container mt-4">
+    <h1>Обновить налоговые параметры</h1>
+    <form method="POST" action="/web/car/tax-param/update">
+        {{ form.hidden_tag() }}
+        <label for="id">ID:</label>
+        {{ form.id(class="form-control") }}
+        <br>
+        <label for="city_id">Код региона:</label>
+        {{ form.city_id(class="form-control") }}
+        <br>
+        <label for="from_hp_car">Мощность (мин):</label>
+        {{ form.from_hp_car(class="form-control") }}
+        <br>
+        <label for="to_hp_car">Мощность (макс):</label>
+        {{ form.to_hp_car(class="form-control") }}
+        <br>
+        <label for="start_year">Начало производства:</label>
+        {{ form.start_year(class="form-control") }}
+        <br>
+        <label for="end_year">Конец производства:</label>
+        {{ form.end_year(class="form-control") }}
+        <br>
+        <label for="rate">Налоговая ставка:</label>
+        {{ form.rate(class="form-control") }}
+        <br>
+        <input type="submit" value="Обновить" class="btn btn-primary">
+    </form>
+    <div>
+        <h2>Результат:</h2>
+        <p>{{ result }}</p>
+    </div>
+</body>
+</html>
